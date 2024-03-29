@@ -56,13 +56,13 @@ Contains the following fields:
 
 # Usage
 
-**Prerequisites**
+##Prerequisites
 - An S3 bucket to store data categorized into either the landing, trusted, or curated zone
 - Landing zone S3 buckets to ingest raw customer, step trainer, and accelerometer JSON files
 - IAM permissions for S3, Glue, and Athena
 - Database specific for project's Glue tables, e.g. project
 
-**Outline**
+##Outline
 The solution is built on AWS and uses the following services:
 
 - S3 for data storage
@@ -81,7 +81,8 @@ My data lakehouse solution is comprised of five Python scripts which are run in 
 
 5. `machine_learning_curated.py`: This script combines Step Trainer and Accelerometer data from the 'curated' zone into a single table to train a machine learning model.
 
-**Directions**
+##Directions
+
 To create Customer Landing Zone
 a. Run `customer_landing.sql` script in Athena to create customer_landing table
 
@@ -107,7 +108,7 @@ To create Machine Learning Curated Zone
 Run `machine_learning_curated.py` script in Glue to create machine_learning_curated table
 
 # Solution
-**Technical discussion**
+## Technical discussion
 
 In a data lake architecture, the use of landing, trusted, and curated zones serves specific purposes that can significantly enhance the quality, reliability, and usability.
 
@@ -119,7 +120,7 @@ Curated Zone: The curated zone is where data is further transformed, often to me
 
 In essence, these three zones facilitate a layered approach to data management and preparation. Each stage adds value to the data, making it increasingly reliable and useful for our specific needs. This strategy also aids in maintaining data quality, tracking data lineage, and enabling efficient and versatile data exploration and analysis.
 
-**Business discussion**
+## Business discussion
 
 Our data lakehouse solution is designed to give STEDI a robust and flexible data infrastructure that allows us to store, clean, and transform vast amounts of data.
 
