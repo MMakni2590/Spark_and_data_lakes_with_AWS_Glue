@@ -1,5 +1,5 @@
 # Spark_and_data_lakes_with_AWS_Glue
-Project successfully completed as part of the Udacity data engineering nanodegree. This project is done using AWS as cloud infrastructure and some of it services like S3, Glue and Athena. In order to access the project data, you can use this [link] (https://github.com/udacity/nd027-Data-Engineering-Data-Lakes-AWS-Exercises/tree/main/project/starter).
+Project successfully completed as part of the Udacity data engineering nanodegree. This project is done using AWS as cloud infrastructure and some of it services like S3, Glue and Athena. In order to access the project data, you can use this [link](https://github.com/udacity/nd027-Data-Engineering-Data-Lakes-AWS-Exercises/tree/main/project/starter).
 
 # Problem statement
 The STEDI Team has been hard at work developing a hardware STEDI Step Trainer that:
@@ -56,13 +56,13 @@ Contains the following fields:
 
 # Usage
 
-##Prerequisites
+## Prerequisites
 - An S3 bucket to store data categorized into either the landing, trusted, or curated zone
 - Landing zone S3 buckets to ingest raw customer, step trainer, and accelerometer JSON files
 - IAM permissions for S3, Glue, and Athena
 - Database specific for project's Glue tables, e.g. project
 
-##Outline
+## Outline
 The solution is built on AWS and uses the following services:
 
 - S3 for data storage
@@ -81,7 +81,7 @@ My data lakehouse solution is comprised of five Python scripts which are run in 
 
 5. `machine_learning_curated.py`: This script combines Step Trainer and Accelerometer data from the 'curated' zone into a single table to train a machine learning model.
 
-##Directions
+## Directions
 
 To create Customer Landing Zone
 a. Run `customer_landing.sql` script in Athena to create customer_landing table
